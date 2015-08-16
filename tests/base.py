@@ -9,7 +9,11 @@
 # Copyright (c) 2015, Utsav Shah <ukshah2@illinois.edu>
 
 from unittest import TestCase as PythonTestCase
+from LibToHttp import router
 
 
 class TestCase(PythonTestCase):
-    pass
+    ''' base class for all LibToHttp tests '''
+    def setUp(self):
+        router.config.API_ROUTES_ENABLED = True
+        router.reset()

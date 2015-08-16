@@ -6,4 +6,5 @@
 
     '''
 
+API_ROUTES_ENABLED = True
 URL_PREFIX = '/'

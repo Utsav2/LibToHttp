@@ -8,12 +8,10 @@
 # http://www.opensource.org/licenses/MIT-license
 # Copyright (c) 2015, Utsav Shah <ukshah2@illinois.edu>
 
-from preggy import expect
-
 from LibToHttp import __version__
 from tests.base import TestCase
 
 
 class VersionTestCase(TestCase):
     def test_has_proper_version(self):
-        expect(__version__).to_equal('0.1.0')
+        self.assertEquals(__version__, '0.1.0')
