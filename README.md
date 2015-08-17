@@ -32,7 +32,7 @@ This hasn't been used in the wild and is just a proof of concept, so use at your
 #Installing
 
       git clone 
-      virtualenv venv
+      virtualenv --python=python3.4 venv
       source venv/bin/activate
       pip install -r requirements.txt
     
